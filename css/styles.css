@@ -100,13 +100,13 @@ header {
   margin-top: 60px;
 }
 
-.we-make a {
-  display: block;
-  font-family: 'Bebas Neue';
-  font-size: clamp(2rem, 7vw, 5.5rem);
-  color: --Tertiary;
-  cursor: grabbing;
+.we-make {
+  display: flex;
+  gap: 40px;
+  margin-top: 60px;
+  align-items: center; /* ✅ vertical centering */
 }
+
 .we-make a:hover {
   color: var(--Secondary);
   transform: scale(1.1);
