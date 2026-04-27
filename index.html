@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>studioMERWIN</title>
+  <meta name="description" content="studioMERWIN — Architecture, Developments, Furniture, Dreams" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div id="cursor"></div>
+<div id="cursor-arrow">→</div>
+
+<!-- Header -->
+<header>
+  <div class="logo" onclick="showPage('splash')">studio<strong>MERWIN</strong></div>
+  <div class="header-actions">
+    <button id="filterBtn" class="hidden">FILTER</button>
+    <div id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<!-- Nav Overlay -->
+<nav id="navOverlay">
+  <a onclick="navigate('projects')">Work</a>
+  <a onclick="navigate('about')">About</a>
+  <a onclick="navigate('contact')">Contact</a>
+</nav>
+
+<!-- SPLASH -->
+<section id="splash" class="page active">
+  <div class="hero">
+    <h1><span>studio</span><strong>MERWIN</strong></h1>
+  </div>
+
+  <div class="we-make">
+    <div class="static">We Make</div>
+    <div class="rotating">
+      <a onclick="filterAndGo('Architecture')">Architecture</a>
+      <a onclick="filterAndGo('Developments')">Developments</a>
+      <a onclick="filterAndGo('Furniture')">Furniture</a>
+      <a onclick="filterAndGo('Dreams')">Dreams</a>
+    </div>
+  </div>
+
+  <footer>
+    Talk to us! → <a href="mailto:studiomerwin@gmail.com">studiomerwin@gmail.com</a>
+  </footer>
+</section>
+
+<!-- WORK -->
+<section id="projects" class="page">
+  <div class="projects-list">
+
+    <!-- PROJECT 01 -->
+    <div class="project" data-type="Architecture">
+      <div class="project-header">
+        <span>Desert Residence (Architecture · 2024)</span>
+        <span class="arrow">›</span>
+      </div>
+
+      <div class="project-content">
+        <div class="text-panel">
+          <h3>Desert Residence</h3>
+          <p>A minimal home carved into the landscape.</p>
+          <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+          </div>
+          <div class="panel-tab"></div>
+        </div>
+
+        <div class="carousel">
+          <button class="prev">←</button>
+          <div class="track">
+            <div class="carousel-img"></div>
+            <div class="carousel-img"></div>
+          </div>
+          <button class="next">→</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    Talk to us! → <a href="mailto:studiomerwin@gmail.com">studiomerwin@gmail.com</a>
+  </footer>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="page">
+  <h2>About</h2>
+  <p>
+    studioMERWIN is an architecture and design practice exploring narrative,
+    material, and place.
+  </p>
+  <footer>
+    Talk to us! → <a href="mailto:studiomerwin@gmail.com">studiomerwin@gmail.com</a>
+  </footer>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="page">
+  <h2>Contact</h2>
+  <p><a href="mailto:studiomerwin@gmail.com">studiomerwin@gmail.com</a></p>
+  <p>Boston, MA</p>
+  <footer>
+    Talk to us! → <a href="mailto:studiomerwin@gmail.com">studiomerwin@gmail.com</a>
+  </footer>
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>
