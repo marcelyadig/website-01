@@ -13,7 +13,7 @@ body {
   background: var(--blue);
   color: white;
   font-family: 'Space Mono', monospace;
-  cursor: none;
+  cursor: grab;
 }
 
 .page {
@@ -44,11 +44,11 @@ header {
 .logo {
   font-family: 'Bebas Neue', sans-serif;
   font-size: clamp(1.6rem, 4vw, 2.2rem);
-  cursor: pointer;
+  cursor: grabbing;
 }
 
 #hamburger {
-  cursor: pointer;
+  cursor: grabbing;
 }
 #hamburger span {
   display: block;
@@ -103,7 +103,7 @@ header {
   font-family: 'Bebas Neue';
   font-size: clamp(2rem, 7vw, 5.5rem);
   color: white;
-  cursor: pointer;
+  cursor: grabbing;
 }
 .we-make a:hover {
   color: var(--tan);
@@ -124,7 +124,7 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
-  cursor: pointer;
+  cursor: grabbing;
   font-family: 'Bebas Neue';
   font-size: clamp(1.4rem, 5vw, 3rem);
 }
@@ -163,6 +163,3 @@ footer {
   to { opacity: 1; transform: translateY(0);}
 }
 
-.cursor {
-  color: white;
-}
