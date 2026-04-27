@@ -1,0 +1,12 @@
+yourusername.github.io/
+├── index.html
+├── css/
+│   └── styles.css
+├── js/
+│   └── main.js
+├── images/
+│   └── project-01/
+│       ├── 01.jpg
+│       └── 02.jpg
+├── README.md
+
