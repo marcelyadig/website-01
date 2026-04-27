@@ -1,7 +1,9 @@
 :root {
-  --blue: #1A1AFF;
-  --tan: #D4A96A;
+  --Primary: #1A1AFF;
+  --Secondary: #D4A96A;
+  --Tertiary: #F5F5F5;
   --black: #0A0A0A;
+  
 }
 
 * {
@@ -10,7 +12,7 @@
 
 body {
   margin: 0;
-  background: var(--blue);
+  background: var(--Primary);
   color: white;
   font-family: 'Space Mono', monospace;
   cursor: grab;
@@ -37,7 +39,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--blue);
+  background: var(--Primary);
   z-index: 10;
 }
 
@@ -84,7 +86,7 @@ header {
   text-decoration: none;
 }
 #navOverlay a:hover {
-  color: var(--tan);
+  color: var(--Secondary);
 }
 
 .hero h1 {
@@ -106,7 +108,7 @@ header {
   cursor: grabbing;
 }
 .we-make a:hover {
-  color: var(--tan);
+  color: var(--Secondary);
   transform: scale(1.1);
 }
 
@@ -155,7 +157,7 @@ footer {
 .carousel-img {
   width: 50%;
   height: 408px;
-  background: var(--tan);
+  background: var(--Secondary);
 }
 
 @keyframes fadeIn {
@@ -163,3 +165,8 @@ footer {
   to { opacity: 1; transform: translateY(0);}
 }
 
+a {
+  color: --Tertiary; /* A nice blue shade */
+  color: var(--Secondary);
+  text-decoration: none; /* Optional: removes the default underline */
+}
