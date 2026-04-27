@@ -1,0 +1,164 @@
+:root {
+  --blue: #1A1AFF;
+  --tan: #D4A96A;
+  --black: #0A0A0A;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--blue);
+  color: white;
+  font-family: 'Space Mono', monospace;
+  cursor: none;
+}
+
+.page {
+  display: none;
+  min-height: 100vh;
+  padding: 120px 28px 40px;
+  animation: fadeIn 0.4s ease forwards;
+}
+
+.page.active {
+  display: block;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  padding: 0 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--blue);
+  z-index: 10;
+}
+
+.logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  cursor: pointer;
+}
+
+#hamburger {
+  cursor: pointer;
+}
+#hamburger span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: white;
+  margin: 5px 0;
+}
+
+#navOverlay {
+  position: fixed;
+  inset: 0;
+  background: black;
+  opacity: 0;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  z-index: 20;
+}
+
+#navOverlay.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+#navOverlay a {
+  font-family: 'Bebas Neue';
+  font-size: clamp(3rem, 10vw, 7rem);
+  color: white;
+  text-decoration: none;
+}
+#navOverlay a:hover {
+  color: var(--tan);
+}
+
+.hero h1 {
+  font-family: 'Bebas Neue';
+  font-size: clamp(3.5rem, 14vw, 10rem);
+}
+
+.we-make {
+  display: flex;
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.we-make a {
+  display: block;
+  font-family: 'Bebas Neue';
+  font-size: clamp(2rem, 7vw, 5.5rem);
+  color: white;
+  cursor: pointer;
+}
+.we-make a:hover {
+  color: var(--tan);
+  transform: scale(1.1);
+}
+
+footer {
+  margin-top: auto;
+  font-family: 'Bebas Neue';
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+}
+
+.project {
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  cursor: pointer;
+  font-family: 'Bebas Neue';
+  font-size: clamp(1.4rem, 5vw, 3rem);
+}
+
+.project-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.project.open .project-content {
+  max-height: 2000px;
+}
+
+.text-panel {
+  background: white;
+  color: var(--black);
+  padding: 20px;
+  width: 38%;
+}
+
+.carousel {
+  width: 62%;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-img {
+  width: 50%;
+  height: 408px;
+  background: var(--tan);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px);}
+  to { opacity: 1; transform: translateY(0);}
+}
