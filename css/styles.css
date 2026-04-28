@@ -1,7 +1,7 @@
 :root {
-  --Primary: #1A1AFF;
+  --Primary: Light-green;
   --Secondary: #D4A96A;
-  --Tertiary: #F5F5F5;
+  --Tertiary: white;
   --black: #0A0A0A;
   
 }
@@ -110,6 +110,12 @@ header {
 .we-make a:hover {
   color: var(--Secondary);
   transform: scale(1.1);
+}
+
+.rotating {
+  display: grid;
+  place-items: center; /* This handles both vertical and horizontal at once */
+  height: 100vh;      /* Container needs a height to see vertical centering */
 }
 
 footer {
